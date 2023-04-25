@@ -1,0 +1,267 @@
+:root{
+    --primary:#1f2e88;
+    --secondary:#2f66d4;
+    --hover:#a2d9f5;
+    --black:#333;
+    --green:#90EE90;
+    --white:#fff;
+    --light-color:#666;
+    --light-bg:#eee;
+    --border:.2rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,1);
+
+}
+
+*{
+    font-family: 'Popins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear; 
+}
+html{
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: 5rem;
+}
+section{
+    padding: 6rem 7%;
+}
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 16px 48px;
+    border-radius: .5rem;
+    background: var(--primary);
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+.btn:hover{
+    background: var(--secondary);
+}
+/* header */
+
+.head{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.head .logo{
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--black);
+}
+.head .logo i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+.head .navbar a{
+    font-size: 1.7rem;
+    color: var(--secondary);
+    margin: 0 1rem;
+}
+.head .navbar a:hover{
+    color: var(--primary);
+}
+.head .btn{
+    /* font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    margin-left: 1.7rem;
+    display: none; */
+    margin-top: 0;
+}
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    margin-left: 1.7rem;
+    display: none;
+    
+}
+#menu-btn:hover{
+    color: var(--primary);
+}
+
+/* header end here */
+
+ /* dentis is ended */
+ main{
+    background-color:var(--hover);
+ }
+ .dent1{
+   padding-top: 20px;
+    display: flex;
+    padding: 10px 10px; 
+ }
+ .dentq{
+    margin-top: 10%;
+    text-align: center;
+ }
+ .dentq img{
+    height: 400px;
+ }
+ .dentq img:hover{
+    transform: scale(1.1);
+ }
+ .dent1{
+    cursor: pointer;
+    padding-bottom: 4%;
+ }
+ .dentq h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+ }
+ .dentq h5{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+ }
+ .dent0 h2{
+    margin-top: 20px;
+    font-size: 20px;
+    
+ }
+ .dent0  h5 {
+    font-size: 25px;
+    margin-top: 20px;
+   
+ }
+ .dent0 p {
+    margin-top: 20px;
+    font-size: 15px;
+  
+ }
+ .dent0 button{
+    font-size: 25px;
+    background-color: rgb(92, 66, 185);;
+    margin-top: 5%;
+    
+ }
+ .dent0 button:hover{
+    background-color: rgb(206, 85, 41);;
+ }
+
+.dent0{
+    padding: 10px 10px;
+    margin-top: 8%;
+
+}
+  .dent0 h2{
+    padding: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    text-align: center;
+    border-top: .1rem solid var(--black);
+
+  }
+
+ /* dentist tag ended  */
+ 
+ 
+ .footer{
+    text-align: center;
+    
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 4rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--secondary);
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 2;
+    color: var(--light-color);
+}
+
+.footer .box-container .box .share{
+    margin-top: 1rem;
+}
+
+.footer .box-container .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    background: var(--primary);
+    color: var(--white);
+    line-height: 4.5rem;
+    border-radius: 60%;
+    font-size: 1.7rem;
+    margin-right: .3rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover{
+    background: var(--secondary);
+}
+
+.footer .box-container .box .link{
+    display: block;
+    font-size: 1.7rem;
+    line-height: 2;
+    color: var(--primary);
+    padding: .5rem 0;
+}
+
+.footer .box-container .box .link:hover{
+    color: var(--black);
+}
+
+.footer .credit{
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary);
+    border-top: .1rem solid var(--secondary);
+}
+
+.footer .credit span{
+    color: var(--secondary);
+}
+
+
+/* footer ends */
+
+ 
